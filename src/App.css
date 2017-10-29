@@ -1,29 +1,66 @@
-.App {
-  text-align: center;
+body {
+  margin: 20px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 2s linear;
-  height: 80px;
+input {
+  font-size: 18px;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #222;
-  height: 40px;
-  padding: 10px;
-  color: white;
+.wrapper {
+  background-color: #ff0000
 }
 
-.App-title {
-  font-size: 1.5em;
+.field {
+  border: 10px solid #ddd;
+  display: flex;
+  position: relative;
+}
+
+.field--focused {
+  border-color: #ccc;
+}
+
+.input {
+  border: 0;
+  box-sizing: border-box;
   margin: 0;
+  padding: 10px 0 10px 10px;
+  width: 100%;
 }
 
-.App-intro {
-  font-size: large;
+.clearButton,
+.submitButton {
+  background: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+  outline: 0;
+  padding: 0;
+  width: 25px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.clearButton {
+  background-image: url(./icons/clear.svg);
+  background-size: 30%;
+  right: 0;
+  width: 40px;
+}
+
+.submitButton {
+  background-color: #e5e5e5;
+  background-image: url(./icons/search.svg);
+  background-size: 35%;
+  border: 1px solid #ddd;
+  padding: 0 20px;
+  opacity: .8;
+  width: 40px;
+}
+
+.submitButton:hover {
+  opacity: 1;
 }
